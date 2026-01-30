@@ -46,8 +46,8 @@ app.get('/api/health', async (req, res) => {
     server: 'online',
     engines: {
       images: 'ready', // sharp is internal
-      pandoc: await check('pandoc', 'C:\\Users\\117\\AppData\\Local\\Pandoc\\pandoc.exe'),
-      latex: await check('pdflatex', 'C:\\Users\\117\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.exe'),
+      pandoc: await check('pandoc'),
+      latex: await check('pdflatex'),
       ffmpeg: await check('ffmpeg'),
       libreoffice: await check('soffice')
     }
